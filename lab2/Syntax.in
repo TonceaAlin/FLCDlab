@@ -1,0 +1,8 @@
+program = "{" decllist ";" cmpdstmt "}"
+declist = declaration | declaration ";" decllist
+declaration = ("var" type id)
+cmpstmt = "[" statementlist "]"
+statementlist = 
+readStatement = "read" "(" id ")"
+writeStatement = "write" "("id")"
+type = "int" | "character" | "string"
