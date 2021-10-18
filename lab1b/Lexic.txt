@@ -23,5 +23,5 @@ c. constants:
 	2.character
 		character= " ' "letter" | "digit " ' "
 	3.string
-		string= """char{string}"""
+		string= """char{char}"""
 		char= letter|digit
