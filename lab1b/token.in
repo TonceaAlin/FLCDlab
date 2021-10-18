@@ -12,6 +12,7 @@
 =>
 !=
 ==
+id
 var
 int
 string
@@ -21,5 +22,6 @@ else
 then
 read
 write
+do_while
 do_steps
 array

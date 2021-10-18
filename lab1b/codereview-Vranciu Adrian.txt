@@ -1,0 +1,2 @@
+declaration may start with $ in front ===> identifier = "$" | { letter | digit | "_" } this is wrong
+should be ["$"] instead
