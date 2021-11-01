@@ -1,0 +1,10 @@
+{ 
+var int a;
+var int b;
+read(a);
+read(b);
+test(a>0 and b>0) then
+[ write(a+b) ]
+else then
+[write(a-b) ]
+}

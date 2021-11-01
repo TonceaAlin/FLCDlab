@@ -1,0 +1,10 @@
+{
+var string a;
+var string b;
+var string c;
+var string d = "alfa";
+read(a);
+read(b);
+c=a+b;
+write(c);
+}

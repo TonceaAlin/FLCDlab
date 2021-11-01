@@ -1,0 +1,11 @@
+[{first={, second=-1}, {first= , second=-1}, {first=
+, second=-1}, {first=var, second=-1}, {first= , second=-1}, {first=int, second=-1}, {first= , second=-1}, {first=a, second=97}, {first=;, second=-1}, {first=
+, second=-1}, {first=var, second=-1}, {first= , second=-1}, {first=int, second=-1}, {first= , second=-1}, {first=b, second=98}, {first=;, second=-1}, {first=
+, second=-1}, {first=read, second=-1}, {first=(, second=-1}, {first=a, second=97}, {first=), second=-1}, {first=;, second=-1}, {first=
+, second=-1}, {first=read, second=-1}, {first=(, second=-1}, {first=b, second=98}, {first=), second=-1}, {first=;, second=-1}, {first=
+, second=-1}, {first=test, second=-1}, {first=(, second=-1}, {first=>, second=-1}, {first= , second=-1}, {first=and, second=-1}, {first= , second=-1}, {first=>, second=-1}, {first=), second=-1}, {first= , second=-1}, {first=then, second=-1}, {first=
+, second=-1}, {first=[, second=-1}, {first= , second=-1}, {first=write, second=-1}, {first=(, second=-1}, {first=+, second=-1}, {first=), second=-1}, {first= , second=-1}, {first=], second=-1}, {first=
+, second=-1}, {first=else, second=-1}, {first= , second=-1}, {first=then, second=-1}, {first=
+, second=-1}, {first=[, second=-1}, {first=write, second=-1}, {first=(, second=-1}, {first=-, second=-1}, {first=), second=-1}, {first= , second=-1}, {first=], second=-1}, {first=
+, second=-1}, {first=}, second=-1}, {first=
+, second=-1}]

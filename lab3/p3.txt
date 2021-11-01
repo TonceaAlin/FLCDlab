@@ -1,0 +1,14 @@
+{
+var int n = 10;
+var int number;
+var array[n] x;
+var int maximum = 0;
+do_steps(var int i, n)
+[ read(number);
+x[i] = number; ]
+do_steps(var int i, n)
+[ test(x[i] > maximum) then
+[maximum = x[i]; ]
+]
+write(maximum);
+}
