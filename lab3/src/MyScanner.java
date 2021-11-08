@@ -27,14 +27,19 @@ public class MyScanner {
     }
     public void scan() throws FileNotFoundException {
         List<String> tokens = this.tokenize();
+        int lineNumber = 1;
         for(String token: tokens){
+            if(token.contains("\n")){
+                lineNumber += 1;
+                continue;
+            }
             if(this.reservedWords.contains(token) || this.operators.contains(token) || this.separators.contains(token)){
                 this.PIF.add(new Pair(token, -1));
             }else if(isIdentifier(token) || isConstant(token)){
                 int pos = this.symbolTable.add(token);
                 this.PIF.add(new Pair(token, pos));
             }else{
-                System.out.println("lexical error");
+                System.out.println("lexical error on line " + lineNumber);
             }
         }
     }
@@ -59,7 +64,6 @@ public class MyScanner {
                 }
             }
         }
-        //System.out.println(tokensIncludingSeparators);
         return tokensIncludingSeparators;
     }
 
@@ -67,8 +71,8 @@ public class MyScanner {
         return this.symbolTable.get();
     }
 
-    public List<Pair<String, Integer>> getPIF() {
-        return this.PIF.get();
+    public String getPIF() {
+        return String.valueOf(this.PIF);
     }
 
     public boolean isIdentifier(String element){

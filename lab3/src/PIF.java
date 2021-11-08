@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PIF {
-    private List<Pair<String, Integer>> tokensPositions;
+    public List<Pair<String, Integer>> tokensPositions;
 
     public PIF(){
         this.tokensPositions = new ArrayList<>();
@@ -12,8 +12,19 @@ public class PIF {
         this.tokensPositions.add(element);
     }
 
-    public List<Pair<String, Integer>> get() {
-        return this.tokensPositions;
+    public String get() {
+        return this.tokensPositions.toString();
     }
 
+    @Override
+    public String toString() {
+        StringBuilder stringBuilder = new StringBuilder();
+        for (Pair<String, Integer> tokensPosition : this.tokensPositions) {
+            stringBuilder.append(tokensPosition.getFirst())
+                    .append(" : ")
+                    .append(tokensPosition.getSecond())
+                    .append("\n");
+        }
+        return stringBuilder.toString();
+    }
 }

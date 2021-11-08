@@ -51,15 +51,6 @@ public class SymbolTable {
         return null;
     }
 
-    public String findElementByPosition(Pair<Integer, Integer> position){
-        if(position.getFirst() > this.elements.size() || position.getSecond() > this.elements.get(position.getFirst()).size())
-            return "invalid position";
-        if(position.getSecond() > 0){
-            return this.elements.get(position.getFirst()).get(position.getSecond());
-        }else{
-            return this.elements.get(position.getFirst()).get(0);
-        }
-    }
 
     public boolean contains(String element){
         return findElementPosition(element) != null;

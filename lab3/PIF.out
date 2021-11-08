@@ -1,5 +1,54 @@
-[{first={, second=-1}, {first=
-, second=-1}, {first=var, second=-1}, {first= , second=-1}, {first=string, second=-1}, {first= , second=-1}, {first=a, second=97}, {first= , second=-1}, {first==, second=-1}, {first= , second=-1}, {first=;, second=-1}, {first=
-, second=-1}, {first=var, second=-1}, {first= , second=-1}, {first=char, second=-1}, {first= , second=-1}, {first=a, second=97}, {first= , second=-1}, {first==, second=-1}, {first= , second=-1}, {first=;, second=-1}, {first=
-, second=-1}, {first=}, second=-1}, {first=
-, second=-1}]
+{ : -1
+  : -1
+var : -1
+  : -1
+int : -1
+  : -1
+a : 97
+; : -1
+var : -1
+  : -1
+int : -1
+  : -1
+b : 98
+; : -1
+read : -1
+( : -1
+a : 97
+) : -1
+; : -1
+read : -1
+( : -1
+b : 98
+) : -1
+; : -1
+test : -1
+( : -1
+> : -1
+  : -1
+and : -1
+  : -1
+> : -1
+) : -1
+  : -1
+then : -1
+[ : -1
+  : -1
+write : -1
+( : -1
++ : -1
+) : -1
+  : -1
+] : -1
+else : -1
+  : -1
+then : -1
+[ : -1
+write : -1
+( : -1
+- : -1
+) : -1
+  : -1
+] : -1
+} : -1
+
