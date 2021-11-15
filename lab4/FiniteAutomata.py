@@ -28,23 +28,6 @@ class FiniteAutomata:
                 else:
                     self.S[(source, to)].append(destination)
 
-    def isDFA(self):
-        for key in self.S.keys():
-            if len(self.S[key]) > 1:
-                return False
-        return True
-
-    def isAccepted(self, seq):
-        if self.isDFA():
-            crt = self.q0
-            for symbol in seq:
-                if (crt, symbol) in self.S.keys():
-                    crt = self.S[(crt, symbol)][0]
-                else:
-                    return False
-            return crt in self.F
-        return False
-
     def __str__(self):
         return "Q = { " + str(', '.join(self.Q)) + " }\n " + "E = { " + str(', '.join(self.E)) + " }\n" \
                                                                                                  "q0 = { " + str(
