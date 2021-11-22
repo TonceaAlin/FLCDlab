@@ -1,0 +1,4 @@
+N = { S C }
+E = { a b }
+P = { S -> ab | aCSb , C -> S | bSb , CS -> b }
+S = S
