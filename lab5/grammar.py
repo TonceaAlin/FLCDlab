@@ -12,7 +12,6 @@ class Grammar:
             self.E = file.readline().replace('}', '').strip().split(' ')[3:]
             helper = file.readline()[3:].replace(' ', '').replace('{', '').replace('}', '').strip().split(',')
             self.S = file.readline().replace('}', '').strip().split(' ')[2:]
-        print(helper)
         for token in helper:
             items = token.split('->')
             if '|' in items[1]:
@@ -23,7 +22,6 @@ class Grammar:
                 self.P[items[0]] = []
             for x in after:
                 self.P[items[0]].append(x)
-        print(self.P)
 
     def checkCFG(self):
         for each in self.P.keys():
@@ -41,4 +39,28 @@ class Grammar:
 
     def nonterminalsProductions(self, symbol):
         print(self.P[symbol])
+
+    def isNonTerminal(self, symbol):
+        if symbol in self.N:
+            return True
+        return False
+
+    def isTerminal(self, symbol):
+        if symbol in self.E:
+            return True
+        return False
+
+    def getNthProduction(self, key, index):
+        return key, self.P[key][index - 1]
+
+    def getInitialState(self):
+        return self.S
+
+# g = Grammar([], [], {}, [])
+# g.readFile("g1.txt")
+# f = "aCSb"
+# for x in g.P.keys():
+#     if f in g.P[x]:
+#         print(g.P[x].index(f))
+# print(list(g.P.keys()))
 
