@@ -1,8 +1,7 @@
 import functools
 import operator
 
-
-
+from ParserOutput import ParserOutput
 
 
 class Parser2:
@@ -87,11 +86,13 @@ class Parser2:
             self.buildProductions()
 
     def buildProductions(self):
-        parseTree = '\nParse tree: '
+        parseTree = '\nProduction string: '
+        copy = ''
         for each in self.workingStack:
             if type(each) == tuple:
-                parseTree += '{0}{1}'.format(each[0], each[1])
+                copy += '{0}{1}'.format(each[0], each[1])
+        parseTree += copy
         print(parseTree)
-        ParserOutput(parseTree, self.sequence, self.grammar)
-
+        output = ParserOutput(copy, self.sequence, self.grammar)
+        output.construct_production()
 
