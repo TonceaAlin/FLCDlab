@@ -9,8 +9,8 @@ class Parser2:
         self.grammar = grammar
         self.state = 'q'
         self.index = 1
-        self.workingStack = [] # empty state // alpha
-        self.inputStack = grammar.getInitialState() # beta
+        self.workingStack = []
+        self.inputStack = grammar.getInitialState()
         self.sequence = sequence
 
     def expand(self):
@@ -86,7 +86,7 @@ class Parser2:
             self.buildProductions()
 
     def buildProductions(self):
-        parseTree = '\nProduction string: '
+        parseTree = '\nParse result: '
         copy = ''
         for each in self.workingStack:
             if type(each) == tuple:

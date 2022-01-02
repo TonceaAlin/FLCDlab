@@ -1,5 +1,6 @@
-class Grammar:
 
+
+class Grammar:
     def __init__(self, N, E, P, S):
         self.N = N
         self.E = E
@@ -55,12 +56,4 @@ class Grammar:
 
     def getInitialState(self):
         return self.S
-
-# g = Grammar([], [], {}, [])
-# g.readFile("g1.txt")
-# f = "aCSb"
-# for x in g.P.keys():
-#     if f in g.P[x]:
-#         print(g.P[x].index(f))
-# print(list(g.P.keys()))
 

@@ -5,14 +5,15 @@
 from grammar import Grammar
 from parser2 import Parser2
 
+def readSequence(filename):
+    with open(filename, "r") as file:
+        return file.readline()
 
 def run():
     gram = Grammar([], [], {}, [])
     gram.readFile("g1.txt")
-    # print(gram.checkCFG())
-    # sym = input(">>")
-    # gram.nonterminalsProductions(sym)
-    parser = Parser2(gram, "aacbc")
+    sequence = readSequence("seq.txt")
+    parser = Parser2(gram, sequence)
     parser.parse()
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
